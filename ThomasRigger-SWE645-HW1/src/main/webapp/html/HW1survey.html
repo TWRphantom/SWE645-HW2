@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<!-- This is my html code for my Homework 1 survey form -->
+
+
+<html>
+<link href="../css/HW1survey.css" rel="stylesheet">
+  
+<head>
+    <title>
+        Thomas R Homework 1 Survey
+    </title>
+</head>
+ 
+<body>
+    <h1 style="background-color:White;">Survey Form </h1>
+  
+    <form id="form">
+    	
+    	<div class="center-label">
+	    	<label for="name" id="surveyLabel">
+	        	Please enter your personal details [Required]
+	        </label>
+	    </div>
+        
+        <div class="form-control">
+	        <div class="float-child">
+	        	
+	            <label for="name" id="label-FirstName">
+	                First Name
+	            </label>
+	            
+	            <input type="text"
+	                   id="firstName"
+	                   placeholder="Enter your first name" 
+	                   required/>
+	       	</div>
+	       	
+	        <div class="float-child">
+	            <label for="name" id="label-LastName">
+	                Last Name
+	            </label>
+	 		
+	            <input type="text"
+	                   id="lastName"
+	                   placeholder="Enter your last name" 
+	                   required/>
+	        
+	        </div>
+	        
+	        <div class="float-child">
+	            <label for="name" id="label-Address">
+	                Street Address
+	            </label>
+	 
+	            <input type="text"
+	                   id="streetAddress"
+	                   placeholder="Enter your street address" 
+	                   required/>
+	                  
+	        </div>
+	        
+	        <div class="float-child">
+	            <label for="name" id="label-City">
+	                City
+	            </label>
+	            
+	            <input type="text"
+	                   id="City"
+	                   placeholder="Enter your city" 
+	                   required/>
+	                   
+	        </div>
+	        
+	        <div class="float-child">
+	            <label for="name" id="label-State">
+	                State
+	            </label>
+	            <input type="text"
+	                   id="state"
+	                   placeholder="Enter your state" 
+	                   required/>
+	        </div>
+	        
+	        <div class="float-child">          
+	            <label for="name" id="label-Zip">
+	                Zip Code
+	            </label>
+	            <input type="text"
+	                   id="zip"
+	                   placeholder="Enter your zip code" 
+	                   required/>
+	        </div>
+	        
+	        <div class="float-child">           
+	            <label for="name" id="label-PhoneNumber">
+	                Phone Number
+	            </label>
+	            <input type="text"
+	                   id="telephoneNumber"
+	                   placeholder="Enter your telephone number" 
+	                   required/>
+	        </div>
+	        
+	        <div class="float-child">           
+	            <label for="name" id="label-Email">
+	                Email
+	            </label>
+	            <input type="text"
+	                   id="email"
+	                   placeholder="Enter your email" 
+	                   required/>
+	        </div>
+	        
+	        <div class="float-child">          
+	            <label for="name" id="label-Date">
+	                Date
+	            </label>
+	            <input type="text"
+	                   id="date"
+	                   placeholder="Enter today's date" 
+	                   required/>
+	        </div>
+	        
+        </div>
+        <!-- Check Boxes -->
+        <div class="form-control">
+            <label>What do you like most about campus?
+            </label>
+            <label for="checkbox-1">
+                <input type="checkbox"
+                       name="checkbox">Students
+            </label>
+            
+            <label for="checkbox-2">
+                <input type="checkbox"
+                       name="checkbox">Location
+            </label>
+            
+            <label for="checkbox-3">
+                <input type="checkbox"
+                       name="checkbox">Campus
+            </label>
+            
+            <label for="checkbox-4">
+                <input type="checkbox"
+                       name="checkbox">Atmosphere
+                </label>
+                
+            <label for="checkbox-5">
+                <input type="checkbox"
+                       name="checkbox">Dorm Rooms
+                 </label>
+            <label for="checkbox-6">
+                <input type="checkbox"
+                       name="checkbox">Sports
+            </label>
+        </div>
+        
+        <!-- Radio Buttons -->
+        <div class="form-control">
+            <label>
+                How did you become interested in GMU?
+            </label>
+            
+            <label for="reference-1">
+                <input type="radio"
+                       id="reference-1"
+                       name="reference">Friends
+            </label>
+            <label for="reference-2">
+                <input type="radio"
+                       id="reference-2"
+                       name="reference">Television
+            </label>
+            <label for="reference-3">
+                <input type="radio"
+                       id="reference-3"
+                       name="reference">Internet
+            </label>
+            <label for="reference-3">
+                <input type="radio"
+                       id="reference-3"
+                       name="reference">Other
+            </label>
+        </div>
+  
+        <div class="form-control">
+            <label for="recommend" id="label-recommend">
+                How likely are you to recommend this school to other prospective students
+            </label>
+             
+            <select name="recommend" id="recommend">
+                <option value="VeryLikely">Very Likely</option>
+                <option value="Likely">Likely</option>
+                <option value="Unlikely">Unlikely</option>
+            </select>
+        </div>
+        
+        <div class="form-control">
+	        <label for="raffle">Enter your raffle numbers for a chance to win a movie ticket!
+	        </label>
+	        
+        	<label for="raffle">Please Enter at least ten comma separated
+numbers ranging from 1 through 100
+            </label>
+            
+        	<textarea name="raffle" id="raffle" 
+                placeholder="Enter your numbers here"></textarea>
+        </div>
+  
+        <div class="form-control">
+            <label for="comment">Any additional comments or suggestions?
+            </label>
+ 
+            
+            <textarea name="comment" id="commentInput"
+                placeholder="Enter your comment here"></textarea>
+        </div>
+  
+        
+       	<div class="float-child">
+	        <button type="submit" value="submit">
+	            Submit
+	        </button>
+        </div>
+        
+        <div class="float-child">
+	        <button type="button" value="cancel" onclick="window.location.reload()">
+	            Cancel
+	        </button>
+	    </div>
+        
+    </form>
+</body>
+  
+</html>

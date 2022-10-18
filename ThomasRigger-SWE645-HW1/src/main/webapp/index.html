@@ -1,0 +1,116 @@
+<!-- This i the homepage for my website. It contains links to all my different projects. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- This is based on the template from W3 schools, as the assignment called for -->
+<title>Thomas Rigger SWE 645</title>
+<meta charset="UTF-8">
+<!-- Pulling the W3-schools stylesheets. The instructions allow it so this should be okay -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="homePageSidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="sidebarClose()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>Thomas R Homepage</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    
+    <!-- Buttons for going to each homework. error works as normal but im also providing a shortcut -->
+    <a onclick="window.location.href='https://3.214.215.31/ThomasRigger-SWE645-HW1/html/HW1survey.html';" class="w3-bar-item w3-button">Homework 1</a>
+    <a href="#" class="w3-bar-item w3-button">Homework 2</a>
+    <a href="#" class="w3-bar-item w3-button">Homework 3</a>
+    <a href="#" class="w3-bar-item w3-button">Homework 4</a>
+    <a href="error.html" class="w3-bar-item w3-button">Go To error.html</a>
+  </div>
+  
+</nav>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  
+</div>
+
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">Thomas R Homepage</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="sidebarOpen()()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="sidebarClose()" style="cursor:pointer" title="close side menu" id="homePageOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+  
+  
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  	<div class="w3-container w3-text-grey" id="This is the homepage for my SWE 645 assignments">
+		<p>Please select an assignment from the side-bar to view</p>
+	</div>
+	
+	<div class="w3-content w3-container w3-padding-64" id="portfolio">
+	  <h3 class="w3-center">ABOUT ME</h3>
+	  <p class="w3-center"><em>I'm working as a Software Developer while finishing up college. I have two years experience in the field and I've been coding for over ten years 
+	  This is my last semester at GMU and I'm excited to complete my masters degree in Computer Science. 
+	  I have experience in most major languages like Python, C, and Java. I have done work on various projects including machine learning.</em></p><br>
+	  
+	  
+	  
+	  <div class="w3-col m3">
+	    <img src="images/Dog.jpg" style="width:100%" onclick="window.location.href='https://youtu.be/OPf0YbXqDm0';" class="w3-hover-opacity" alt="Meme1">
+	 </div>
+	
+	 <div class="w3-col m3">
+	   <img src="images/Dog.jpg" style="width:100%" onclick="window.location.href='https://youtu.be/OPf0YbXqDm0';" class="w3-hover-opacity" alt="Meme2">
+	 </div>
+	
+	 <div class="w3-col m3">
+	   <img src="images/Dog.jpg" style="width:100%" onclick="window.location.href='https://youtu.be/OPf0YbXqDm0';" class="w3-hover-opacity" alt="Meme3">
+	 </div>
+	
+	 <div class="w3-col m3">
+	   <img src="images/Dog.jpg" style="width:100%" onclick="window.location.href='https://youtu.be/OPf0YbXqDm0';" class="w3-hover-opacity" alt="Meme4">
+	 </div>
+  </div>
+</div>
+
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Open and close sidebar
+function sidebarOpen() {
+  document.getElementById("homePageSidebar").style.display = "block";
+  document.getElementById("homePageOverlay").style.display = "block";
+}
+ 
+function sidebarClose() {
+  document.getElementById("homePageSidebar").style.display = "none";
+  document.getElementById("homePageOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

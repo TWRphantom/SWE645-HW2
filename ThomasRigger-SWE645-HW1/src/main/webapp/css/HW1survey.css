@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+
+/* This is my style sheet for my Homework 1 survey form
+
+I needed to learn css, so I followed a tutorial from w3schools and geeksforgeeks since 
+this my first time with CSS. I tried to make it look like an actual GMU website */
+
+/*This controls the image behind the survey*/
+body {
+	text-align: center;
+    background-image: url("../images/illustration.jpg");
+}
+
+/* This is the main body of the page. */
+form {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: auto;
+}
+
+.form-control {
+	display: block;
+    text-align: left;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* I use this to have multiple elements on the 
+same line, like with the details and buttons */
+.float-child {
+    width: 40%;
+    margin-right: 10%;
+    margin-bottom: 25px;
+    float: Left; 
+    
+}  
+
+center-label {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.form-control input,
+.form-control select {
+	display: block;
+    width: 100%;
+}
+
+.form-control textarea {
+	display: block;
+    width: 100%;
+}
+
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+button {
+    border-radius: 2px;
+    font-size: 21px;
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
+
